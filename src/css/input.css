@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hamburger-menu{
+    @apply w-[30px] h-[2px] my-2 block bg-gray-400;
+}
+
+.hamburger-active > span:nth-child(1){
+    @apply  rotate-45 bg-white ;
+}
+.hamburger-active > span:nth-child(2){
+    @apply scale-0;
+}
+.hamburger-active > span:nth-child(3){
+    @apply -rotate-45 bg-white;
+}
+.nav-scroll{
+    @apply fixed bg-white/5 backdrop-blur-md shadow-md ;
+}
+
+.box-learn{
+    @apply block mt-10 space-y-10 lg:space-y-0 lg:flex items-center justify-center gap-10;
+}
+.box-price{
+    @apply block mt-10 space-y-10 lg:space-y-0 lg:flex items-center justify-center gap-10 lg:gap-0 md:mx-40;
+}
+
